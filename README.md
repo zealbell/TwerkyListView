@@ -41,7 +41,7 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
 ```xml
    dependencies {
         implementation 'com.github.54LiNKeR:TrumpyRecyclerView:1.trump.2'
-        implementation 'com.github.54LiNKeR:TwerkyListView:1.twerk.0'
+        implementation 'com.github.54LiNKeR:TwerkyListView:1.twerk.1'
    }
 ```
 
