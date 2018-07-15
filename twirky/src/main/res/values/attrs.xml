@@ -1,0 +1,12 @@
+<resources>
+    <declare-styleable name="TwerkyListView">
+        <attr name="stretchScale" format="float"/>
+        <attr name="shrinkScale" format="float"/>
+        <attr name="twerkStyle" format="integer">
+            <enum name="UP" value="0"/>
+            <enum name="DOWN" value="1"/>
+            <enum name="UPnDOWN" value="2"/>
+        </attr>
+        <attr name="ShrinkStretchSpan" format="integer"/>
+    </declare-styleable>
+</resources>
