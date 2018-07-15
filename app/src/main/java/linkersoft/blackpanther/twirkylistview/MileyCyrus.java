@@ -15,7 +15,7 @@ import java.util.Random;
 import linkersoft.blackpanther.trump.TrumpyRecycler;
 import linkersoft.blackpanther.twirky.TwerkyListView;
 
-public class Twirky extends AppCompatActivity {
+public class MileyCyrus extends AppCompatActivity {
 
 
     @Override

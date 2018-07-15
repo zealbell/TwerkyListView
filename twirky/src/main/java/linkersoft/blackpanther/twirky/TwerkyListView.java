@@ -212,7 +212,7 @@ public class TwerkyListView extends TrumpyRecycler {
                 }
             });
             twerkUp.setDuration(DURATION);
-            twerkUp.setInterpolator(InterpolL);
+            twerkUp.setInterpolator(twerkpoles);
 
             twerkUpRev =ValueAnimator.ofFloat(1F,0F);
             twerkUpRev.addUpdateListener(new ValueAnimator.AnimatorUpdateListener(){
@@ -223,7 +223,7 @@ public class TwerkyListView extends TrumpyRecycler {
                 }
             });
             twerkUpRev.setDuration(DURATION);
-            twerkUpRev.setInterpolator(InterpolL);
+            twerkUpRev.setInterpolator(twerkpoles);
             twerkUpRev.addListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
@@ -258,7 +258,7 @@ public class TwerkyListView extends TrumpyRecycler {
                 }
             });
             twerkDown.setDuration(DURATION);
-            twerkDown.setInterpolator(InterpolL);
+            twerkDown.setInterpolator(twerkpoles);
 
             twerkDownRev =ValueAnimator.ofFloat(1F,0F);
             twerkDownRev.addUpdateListener(new ValueAnimator.AnimatorUpdateListener(){
@@ -269,7 +269,7 @@ public class TwerkyListView extends TrumpyRecycler {
                 }
             });
             twerkDownRev.setDuration(DURATION);
-            twerkDownRev.setInterpolator(InterpolL);
+            twerkDownRev.setInterpolator(twerkpoles);
             twerkDownRev.addListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
@@ -294,8 +294,8 @@ public class TwerkyListView extends TrumpyRecycler {
             downTwerk=false;
         }
     }
-    public void setTwerkInterpolator(Interpolator Interpol){
-        this.InterpolL =Interpol;
+    public void setTwerkInterpolator(Interpolator twerkinpole){
+        this.twerkpoles =twerkinpole;
     }
     public void setTwerking(boolean twerking){
         if(!twerking){
@@ -367,7 +367,7 @@ public class TwerkyListView extends TrumpyRecycler {
     private ValueAnimator twerkUp;
     private ValueAnimator twerkDown;
     private ValueAnimator twerkDownRev;
-    private Interpolator InterpolL;
+    private Interpolator twerkpoles;
     private static int rowHeight;
     private int DURATION=500;
     private int maxYgap;
