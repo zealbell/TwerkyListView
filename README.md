@@ -25,6 +25,10 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
 ```java
   class TwerkAdapter{...}
 ```
+## Inspiration
+
+![Demo](shots/inspiration.gif)
+
 ## Appearance
 
 ![Demo](shots/appearance.gif)
