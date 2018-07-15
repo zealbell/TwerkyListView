@@ -9,7 +9,7 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
 > *public-methods*
 
 ```java
-      setTwerkInterpolator(Interpolator twerkpoleStart,Interpolator twerkpoleEnd) // decide twerking start and end motion interpolation
+      setTwerkInterpolators(Interpolator twerkpoleStart,Interpolator twerkpoleEnd) // decide twerking start and end motion interpolation
       public void setTwerking(boolean twerking)// enable/cancel twerking
       public void setTwerkingOffTime(int twerkOfftime)// reset the time it takes to complete twerk
 /*
@@ -26,6 +26,7 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
   class TwerkAdapter{...}
 ```
 ## Inspiration
+> 'Invite me' by Stan Yakusevich @Dribble
 
 ![Demo](shots/inspiration.gif)
 
@@ -91,6 +92,6 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
              //TWERK-ADAPTER
              public static class TwerkingOffAdapter extends  TwerkyListView.TwerkAdapter{...}
 ```
- - TwerkingOffAdapter demo-source 'https://gist.github.com/54LiNKeR/e22021d7b8b970d1f99bc2ca0a22f669'
+ - `demo-source` [TwerkingOffAdapter](https://gist.github.com/54LiNKeR/e22021d7b8b970d1f99bc2ca0a22f669)
 
 > *project is still under development*
