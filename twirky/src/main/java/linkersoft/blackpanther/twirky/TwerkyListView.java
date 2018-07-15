@@ -375,7 +375,7 @@ public class TwerkyListView extends TrumpyRecycler {
     private Interpolator twerkpoleStart;
     private Interpolator twerkpoleEnd;
     private static int rowHeight;
-    private int DURATION=500;
+    private int DURATION=800;
     private int maxYgap;
     private int center;
     private int iYy;
