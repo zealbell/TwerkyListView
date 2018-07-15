@@ -26,7 +26,7 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
   class TwerkAdapter{...}
 ```
 ## Inspiration
-> Invite me by Stan Yakusevich @Dribble
+> 'Invite me' by Stan Yakusevich @Dribble
 
 ![Demo](shots/inspiration.gif)
 
