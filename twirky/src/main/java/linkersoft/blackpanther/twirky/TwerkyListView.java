@@ -298,7 +298,7 @@ public class TwerkyListView extends TrumpyRecycler {
             downTwerk=false;
         }
     }
-    public void setTwerkInterpolator(Interpolator twerkpoleStart,Interpolator twerkpoleEnd){
+    public void setTwerkInterpolators(Interpolator twerkpoleStart,Interpolator twerkpoleEnd){
         this.twerkpoleStart =twerkpoleStart;
         this.twerkpoleEnd =twerkpoleEnd;
     }
