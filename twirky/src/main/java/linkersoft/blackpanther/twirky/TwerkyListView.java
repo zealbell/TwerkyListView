@@ -5,12 +5,14 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.annotation.Nullable;
+import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Interpolator;
+import android.view.animation.OvershootInterpolator;
 
 import linkersoft.blackpanther.trump.TrumpyRecycler;
 
@@ -184,6 +186,8 @@ public class TwerkyListView extends TrumpyRecycler {
         } finally {
             trump_attrs.recycle();
         }
+        twerkpoleStart = new FastOutSlowInInterpolator();
+        twerkpoleEnd = new OvershootInterpolator();
 
         post(new Runnable() {
             @Override
@@ -212,7 +216,7 @@ public class TwerkyListView extends TrumpyRecycler {
                 }
             });
             twerkUp.setDuration(DURATION);
-            twerkUp.setInterpolator(twerkpoles);
+            twerkUp.setInterpolator(twerkpoleStart);
 
             twerkUpRev =ValueAnimator.ofFloat(1F,0F);
             twerkUpRev.addUpdateListener(new ValueAnimator.AnimatorUpdateListener(){
@@ -223,7 +227,7 @@ public class TwerkyListView extends TrumpyRecycler {
                 }
             });
             twerkUpRev.setDuration(DURATION);
-            twerkUpRev.setInterpolator(twerkpoles);
+            twerkUpRev.setInterpolator(twerkpoleEnd);
             twerkUpRev.addListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
@@ -258,7 +262,7 @@ public class TwerkyListView extends TrumpyRecycler {
                 }
             });
             twerkDown.setDuration(DURATION);
-            twerkDown.setInterpolator(twerkpoles);
+            twerkDown.setInterpolator(twerkpoleStart);
 
             twerkDownRev =ValueAnimator.ofFloat(1F,0F);
             twerkDownRev.addUpdateListener(new ValueAnimator.AnimatorUpdateListener(){
@@ -269,7 +273,7 @@ public class TwerkyListView extends TrumpyRecycler {
                 }
             });
             twerkDownRev.setDuration(DURATION);
-            twerkDownRev.setInterpolator(twerkpoles);
+            twerkDownRev.setInterpolator(twerkpoleEnd);
             twerkDownRev.addListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
@@ -294,8 +298,9 @@ public class TwerkyListView extends TrumpyRecycler {
             downTwerk=false;
         }
     }
-    public void setTwerkInterpolator(Interpolator twerkinpole){
-        this.twerkpoles =twerkinpole;
+    public void setTwerkInterpolator(Interpolator twerkpoleStart,Interpolator twerkpoleEnd){
+        this.twerkpoleStart =twerkpoleStart;
+        this.twerkpoleEnd =twerkpoleEnd;
     }
     public void setTwerking(boolean twerking){
         if(!twerking){
@@ -367,7 +372,8 @@ public class TwerkyListView extends TrumpyRecycler {
     private ValueAnimator twerkUp;
     private ValueAnimator twerkDown;
     private ValueAnimator twerkDownRev;
-    private Interpolator twerkpoles;
+    private Interpolator twerkpoleStart;
+    private Interpolator twerkpoleEnd;
     private static int rowHeight;
     private int DURATION=500;
     private int maxYgap;
@@ -408,11 +414,19 @@ public class TwerkyListView extends TrumpyRecycler {
         public void onBindViewHolder(TwerkHolder twerkReceiver, int position){
 
         }
+
+//        @Override
+//        public void onViewAttachedToWindow(TwerkHolder holder) {
+//            super.onViewAttachedToWindow(twervae);
+//
+//        }
+
         @Override
-        public void onViewAttachedToWindow(TwerkHolder twervae) {
-            super.onViewAttachedToWindow(twervae);
-            if(rowHeight!=0)twervae.v.getLayoutParams().height=rowHeight;
+        public void onViewDetachedFromWindow(TwerkHolder holder) {
+            super.onViewDetachedFromWindow(holder);
+            if(rowHeight!=0)holder.v.getLayoutParams().height=rowHeight;
         }
+
         public class TwerkHolder extends  RecyclerView.ViewHolder {
             View v;
             public TwerkHolder(View v){

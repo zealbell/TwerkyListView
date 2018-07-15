@@ -75,12 +75,6 @@ public class MileyCyrus extends AppCompatActivity {
             twerkie.twerktext.setText("item "+position);
         }
 
-
-        @Override
-        public void onViewAttachedToWindow(TwerkHolder twerkholder) {
-            super.onViewAttachedToWindow(twerkholder);/*do not forget this|it's essential for twerking*/
-        }
-
         public class Twerkie extends  TwerkHolder {
 
             TextView twerktext;
