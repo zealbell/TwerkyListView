@@ -95,3 +95,5 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
  - `demo-source` [TwerkingOffAdapter](https://gist.github.com/54LiNKeR/e22021d7b8b970d1f99bc2ca0a22f669)
 
 > *project is still under development*
+
+[![GooglePlay](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
