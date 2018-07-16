@@ -14,8 +14,8 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
       public void setTwerkingOffTime(int twerkOfftime)// reset the time it takes to complete twerk
 ```
 > by default(if *setTwerkInterpolators(...)* is never called)
->      `twerkpoleStart` = new FastOutSlowInInterpolator();
->      `twerkpoleEnd` = new OvershootInterpolator();
+>    -  `twerkpoleStart` = new FastOutSlowInInterpolator();
+>    - `twerkpoleEnd` = new OvershootInterpolator();
 
 > *public-static-class*
 
