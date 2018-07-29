@@ -8,11 +8,12 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
 
 > *public-methods*
 
-```java
-      public void setTwerkInterpolators(Interpolator twerkpoleStart,Interpolator twerkpoleEnd) // decide twerking start and end motion interpolation
-      public void setTwerking(boolean twerking)// enable/cancel twerking
-      public void setTwerkingOffTime(int twerkOfftime)// reset the time it takes to complete twerk
-```
+| Name | Return | What it does | 
+|----------|---------|--------|
+| setTwerkInterpolators(Interpolator twerkpoleStart,Interpolator twerkpoleEnd) | void |  decide twerking start and end motion interpolation |
+| setTwerking(boolean twerking) | void | enable/cancel twerking |
+| setTwerkingOffTime(int twerkOfftime) | void | reset the time it takes to complete twerk |
+
 > by default(if *setTwerkInterpolators(...)* is never called)
 >    -  `twerkpoleStart` = new FastOutSlowInInterpolator();
 >    - `twerkpoleEnd` = new OvershootInterpolator();
