@@ -10,9 +10,9 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
 
 | Method | Return | What it does | 
 |----------|---------|--------|
-| setTwerkInterpolators(Interpolator twerkpoleStart,Interpolator twerkpoleEnd) | void |  decide twerking start and end motion interpolation |
-| setTwerking(boolean twerking) | void | enable/cancel twerking |
-| setTwerkingOffTime(int twerkOfftime) | void | reset the time it takes to complete twerk |
+| setTwerkInterpolators(Interpolator twerkpoleStart,Interpolator twerkpoleEnd) | void |  decides twerking start and end motion interpolation |
+| setTwerking(boolean twerking) | void | enables/cancels twerking |
+| setTwerkingOffTime(int twerkOfftime) | void | resets the time it takes to complete twerk |
 
 > by default(if *setTwerkInterpolators(...)* is never called)
 >    -  `twerkpoleStart` = new FastOutSlowInInterpolator();
