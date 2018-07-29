@@ -6,9 +6,9 @@ A beautiful RecyclerView which list items and animates similar to the peristalti
 for this project wasn't completely drawn imagining or studying earthworms move neither does the author eat or rare earthworms hence any decision made by the reader to google twerking-African earthworms is at the sole discretion of the reader).
 also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __*TwerkyListView$TwerkAdapter*__
 
-> *public-methods*
+> *Method Summary*
 
-| Name | Return | What it does | 
+| Method | Return | What it does | 
 |----------|---------|--------|
 | setTwerkInterpolators(Interpolator twerkpoleStart,Interpolator twerkpoleEnd) | void |  decide twerking start and end motion interpolation |
 | setTwerking(boolean twerking) | void | enable/cancel twerking |
