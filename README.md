@@ -93,7 +93,7 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
              //TWERK-ADAPTER
              public static class TwerkingOffAdapter extends  TwerkyListView.TwerkAdapter{...}
 ```
- - `demo-source` [TwerkingOffAdapter](https://gist.github.com/54LiNKeR/e22021d7b8b970d1f99bc2ca0a22f669)
+ - `adapter-example` [TwerkingOffAdapter](https://gist.github.com/54LiNKeR/e22021d7b8b970d1f99bc2ca0a22f669)
  
 
  
