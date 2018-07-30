@@ -20,11 +20,11 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
 >    -  `twerkpoleStart` = new FastOutSlowInInterpolator();
 >    - `twerkpoleEnd` = new OvershootInterpolator();
 
-> *public-static-class*
+> *Class Summary*
+| Class | Type | What it does | 
+|----------|---------|--------|
+| TwerkAdapter | static | Twerks the Adapter |
 
-```java
-  class TwerkAdapter{...}
-```
 ## Inspiration
 > 'Invite me' by Stan Yakusevich @Dribble
 
@@ -54,7 +54,7 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
             android:id="@+id/twerk"
             app:stretchScale="0.5" // expansion scale
             app:shrinkScale="0.5" // contraction scale
-            app:ShrinkStretchSpan="6" // number list items to contract and expand when twerking
+            app:ShrinkStretchSpan="6" // number of list items to contract and expand when twerking
             app:twerkStyle="UP"/>
 ```
 
