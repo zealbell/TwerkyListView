@@ -103,5 +103,5 @@ also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
 [![GooglePlay](shots/playstore_badge.png)](http://play.google.com/store/apps/details?id=linkersoft.blackpanther.twirkylistview)
 
 
-![LiNKeR](https://github.com/54LiNKeR/54LiNKeR.github.io/blob/master/shots/%23Zealbell.png)
+![LiNKeR](https://github.com/54LiNKeR/54LiNKeR.github.io/blob/master/shots/Zealbell.png)
 
