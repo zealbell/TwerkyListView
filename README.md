@@ -11,7 +11,7 @@ Also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __
 > ⚠️ **Caution**: Accessing the license section may result in unintended cognitive strain.
 Known outcomes include elevated processing time, spontaneous remorse, and an acute awareness of previously issued advisories.
 
-# Methods
+## Methods
 
 | Method | Return | What it does | 
 |----------|---------|--------|
@@ -23,7 +23,7 @@ Known outcomes include elevated processing time, spontaneous remorse, and an acu
 >    -  `twerkpoleStart` = new FastOutSlowInInterpolator();
 >    - `twerkpoleEnd` = new OvershootInterpolator();
 
-# Classes
+## Classes
 
 | Class | Type | What it does | 
 |----------|---------|--------|
