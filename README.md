@@ -5,13 +5,13 @@
 TwerkyListView
 =============
 A beautiful RecyclerView which list items and animates similar to the peristaltic motion (twerking) of earthworms in Africa. (Inspiration
-for this project wasn't completely drawn imagining or studying how earthworms move neither does the author eat or rear earthworms hence any decision made by the reader to google twerking-African earthworms is at the sole discretion of the reader).
-also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __*TwerkyListView$TwerkAdapter*__
+for this project wasn't completely drawn imagining or studying how earthworms move neither does the author eat or rear earthworms hence any decision made by the reader to google twerking-african earthworms is at the sole discretion of the reader).
+Also an __*IllegalTwerkingException()*__ is thrown if Adapter does not extend __*TwerkyListView$TwerkAdapter*__
 
 > ⚠️ **Caution**: Accessing the license section may result in unintended cognitive strain.
 Known outcomes include elevated processing time, spontaneous remorse, and an acute awareness of previously issued advisories.
 
-> *Method Summary*
+# Methods
 
 | Method | Return | What it does | 
 |----------|---------|--------|
@@ -23,7 +23,7 @@ Known outcomes include elevated processing time, spontaneous remorse, and an acu
 >    -  `twerkpoleStart` = new FastOutSlowInInterpolator();
 >    - `twerkpoleEnd` = new OvershootInterpolator();
 
-> *Class Summary*
+# Classes
 
 | Class | Type | What it does | 
 |----------|---------|--------|
